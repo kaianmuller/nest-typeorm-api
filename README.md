@@ -30,7 +30,7 @@
       port: 5432,
       username: 'postgres',  <= (El usuario de tu base de datos)
       password: 'admin',  <= (La contraseña de tu base de datos)
-      database: 'tasks', <= (El nombre de tu base de datos)
+      database: 'task', <= (El nombre de tu base de datos)
       entities: [__dirname + './**/**/*entity{.ts,.js}'],
       autoLoadEntities: true,
       synchronize: true,
