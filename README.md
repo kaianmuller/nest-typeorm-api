@@ -2,7 +2,7 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
 
-# Control de stock
+# Task
 
 # CRUD REST API con Nest JS, Postgres y Typescript
 - Este es un proyecto desafío para los pasantes universitarios.
@@ -30,7 +30,7 @@
       port: 5432,
       username: 'postgres',  <= (El usuario de tu base de datos)
       password: 'admin',  <= (La contraseña de tu base de datos)
-      database: 'tasks', <= (El nombre de tu base de datos)
+      database: 'task', <= (El nombre de tu base de datos)
       entities: [__dirname + './**/**/*entity{.ts,.js}'],
       autoLoadEntities: true,
       synchronize: true,
