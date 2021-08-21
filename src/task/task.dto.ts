@@ -1,7 +1,9 @@
 import { Type } from "class-transformer";
-import { IsDate, IsEnum, IsOptional, IsString, Length } from "class-validator";
+import { IsArray, IsDate, IsEnum, IsOptional, IsString, Length } from "class-validator";
 import { NivelPrioridad } from "src/enums/prioridad.enum";
 import { Status } from "src/enums/status.enum";
+import { SubtaskDto } from "src/subtask/subtask.dto";
+import { Subtask } from "src/subtask/subtask.entity";
 
 export class TaskDto {
     
@@ -22,4 +24,7 @@ export class TaskDto {
 
     @IsEnum(Status)
     status: Status;
+
+    @IsArray()
+    subtasks: Array<Subtask>;
 }

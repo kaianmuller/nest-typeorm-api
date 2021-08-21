@@ -12,7 +12,7 @@ export class TaskService {
       ) {}
     
       async getAll() {
-        return await this.repository.find();
+        return await this.repository.find({join: { alias: 'task',  leftJoinAndSelect: { subtasks: 'task.subtasks' } }});
       }
     
       async getById(id: number) {

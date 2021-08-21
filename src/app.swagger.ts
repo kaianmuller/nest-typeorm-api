@@ -4,9 +4,9 @@ import { INestApplication } from '@nestjs/common';
 
 export const initSwagger = (app: INestApplication) => {
   const swaggerConfig = new DocumentBuilder()
-    .setTitle('Task API')
+    .setTitle('FAutos API')
     .setDescription(
-      'Esta es una API Creada con NestJS con un CRUD básico para Tasks.',
+      'Esta es una API Creada con NestJS con un CRUD básico para el proyecto Flota de Autos para la Pasantia en Datapar.',
     )
     .build();
   const document = SwaggerModule.createDocument(app, swaggerConfig);
