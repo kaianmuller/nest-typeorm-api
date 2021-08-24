@@ -25,7 +25,7 @@ export class Task{
 
 
     
-    @OneToMany(() => Subtask, subtask => subtask.task,{ cascade: true })
+    @OneToMany(() => Subtask, subtask => subtask.task)
     subtasks: Array<Subtask>;
 
     

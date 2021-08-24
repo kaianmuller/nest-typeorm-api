@@ -14,6 +14,13 @@ export class SubtaskController {
       return { data };
     }
   
+
+    @Get('/findoftask/:id')
+    async getOfTask(@Param('id', ParseIntPipe) id: number) {
+      const data = await this.service.getOfTask(id);
+      return {data };
+    }
+
     @Get(':id')
     async getById(@Param('id', ParseIntPipe) id: number) {
       const data = await this.service.getById(id);

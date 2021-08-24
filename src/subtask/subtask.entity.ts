@@ -19,6 +19,9 @@ export class Subtask{
     titulo: string;
 
     @Column()
+    fechaCreacion: Date;
+
+    @Column()
     descripcion: string;
 
     @Column()
